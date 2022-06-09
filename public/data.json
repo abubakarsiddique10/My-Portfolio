@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Manufacturer website development,",
+        "image": "https://i.ibb.co/Lvw0j7J/1.jpg",
+        "description": "Developed a manufacturer-website with front-end, back-end and database for sales and purchase products."
+    },
+    {
+        "name": "Warehouse management website",
+        "image": "https://i.ibb.co/gdQ0RDx/2.jpg",
+        "description": "Implemented different features like product add, display, delete, quantity update and add customer"
+    },
+    {
+        "name": "Private service website",
+        "image": "https://i.ibb.co/mvqv9zn/3-2.jpg",
+        "description": "Implemented a private service management website for online services."
+    }
+]

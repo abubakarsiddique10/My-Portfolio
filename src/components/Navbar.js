@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
     const manuItems =
         <>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/blogs'>Blog</Link></li>
             <li><a>Contact</a></li>
             <li><a href="https://drive.google.com/file/d/12eK_397cUiD2EAhfv0u6HncREfvS3Xz4/view?usp=sharing" target="_blank">Download Resume</a></li>
         </>

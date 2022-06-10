@@ -1,26 +1,44 @@
 [
     {
-        "id": "1",
         "name": "Manufacturer website development,",
         "image": "https://i.ibb.co/Lvw0j7J/1.jpg",
-        "image2": "https://i.ibb.co/Lvw0j7J/1.jpg",
+        "img1": "https://i.ibb.co/JBLzSf7/5.jpg",
+        "img2": "https://i.ibb.co/thwszVc/6.jpg",
+        "img3": "https://i.ibb.co/q7Cd45n/7.jpg",
+        "implement1": "Implemented customer payment system with Stripe.",
         "description": "Developed a manufacturer-website with front-end, back-end and database for sales and purchase products.",
-        "link": "https://hardware-zone.web.app/"
+        "implement2": "Implemented different features like firebase login system, product purchase, product manage, profile create, display customers reviews ect.",
+        "link": "https://hardware-zone.web.app/",
+        "client": "https://github.com/abubakarsiddique10/manufacturer-website-client-side",
+        "server": "https://github.com/abubakarsiddique10/manufacturer-website-server-side",
+        "technology": "Tailwind, DaisyUI component, React js, React router, Express.js firebase etc."
     },
     {
-        "id": "2",
         "name": "Warehouse management website",
-        "image": "https://i.ibb.co/gdQ0RDx/2.jpg",
-        "image2": "https://i.ibb.co/gdQ0RDx/2.jpg",
-        "description": "Implemented different features like product add, display, delete, quantity update and add customer",
-        "link": "https://phone-corner-e38c5.web.app/"
+        "image": "https://i.ibb.co/mzjPpdZ/3-2.jpg",
+        "img1": "https://i.ibb.co/ckQW39N/8.jpg",
+        "img2": "https://i.ibb.co/hfJhvqk/9.jpg",
+        "img3": "https://i.ibb.co/gSx5bLH/10.jpg",
+        "implement1": "Implemented different features like product add, display, delete, quantity update and add customer.",
+        "description": "Created a warehouse management website with front-end and back-end for managing the products",
+        "implement2": "Full responsive website",
+        "link": "https://phone-corner-e38c5.web.app/",
+        "client": "https://github.com/abubakarsiddique10/warehouse-management-client-side",
+        "server": "https://github.com/abubakarsiddique10/Warehouse-management-server-side",
+        "technology": "React-bootstrap, React.js React-router, Express.js, Mongodb etc."
     },
     {
-        "id": "3",
         "name": "Private service website",
         "image": "https://i.ibb.co/mvqv9zn/3-2.jpg",
-        "image2": "https://i.ibb.co/mvqv9zn/3-2.jpg",
+        "img1": "https://i.ibb.co/mvqv9zn/3-2.jpg",
+        "img2": "https://i.ibb.co/mHB0Xvm/11.jpg",
+        "img3": "https://i.ibb.co/Y7Ts0rk/12.jpg",
         "description": "Implemented a private service management website for online services.",
-        "link": "https://web-education-990a6.web.app/"
+        "implement1": "developed  firebase login system",
+        "implement2": "Full responsive website",
+        "link": "https://web-education-990a6.web.app/",
+        "client": "https://github.com/abubakarsiddique10/-independent-service-provider",
+        "server": "https://github.com/abubakarsiddique10/-independent-service-provider",
+        "technology": "React-bootstrap, React.js, React-router etc."
     }
 ]

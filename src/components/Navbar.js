@@ -5,7 +5,7 @@ const Navbar = () => {
         <>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/blogs'>Blog</Link></li>
-            <li><a>Contact</a></li>
+            <li><Link to="/"><a href="#contact">Contact</a></Link></li>
             <li><a href="https://drive.google.com/file/d/12eK_397cUiD2EAhfv0u6HncREfvS3Xz4/view?usp=sharing" target="_blank">Download Resume</a></li>
         </>
     return (
@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="container">
                 <div class="navbar bg-base-100 px-0 justify-between">
                     <div class="navbar-start">
-                        <a class="btn btn-ghost normal-case text-xl">Abu Bakar</a>
+                        <Link to="/" class="text-xl">Abu Bakar</Link>
                     </div>
                     <div class="navbar-center hidden md:block lg:flex">
                         <ul class="menu menu-horizontal p-0">

@@ -13,7 +13,7 @@ const Contact = () => {
         e.target.reset()
     }
     return (
-        <section>
+        <section id="contact">
             <div className="container">
                 <div class="hero bg-base-200 py-10">
                     <div class="text-center lg:text-left">

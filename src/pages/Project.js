@@ -8,13 +8,13 @@ const Project = ({ project }) => {
         navigate(`/projectDetails/${id}`)
     }
     return (
-        <div class="card lg:w-lg bg-base-100 shadow-xl">
+        <div className="card lg:w-lg bg-base-100 shadow-xl">
             <figure className="h-48"><img className="h-full" src={image} alt="Shoes" /></figure>
-            <div class="card-body">
-                <h2 class="card-title">{name}</h2>
+            <div className="card-body">
+                <h2 className="card-title">{name}</h2>
                 <p>{description}</p>
-                <div class="card-actions justify-end">
-                    <button onClick={() => handlenavigate(_id)} class="btn btn-primary">Details</button>
+                <div className="card-actions justify-end">
+                    <button onClick={() => handlenavigate(_id)} className="btn btn-primary">Details</button>
                 </div>
             </div>
         </div>

@@ -3,9 +3,8 @@ import { useParams } from "react-router-dom";
 const ProjectDetails = () => {
     const { id } = useParams();
     const [details, setDetails] = useState({});
-    console.log(details)
     useEffect(() => {
-        fetch(`http://localhost:5000/projects/${id}`)
+        fetch(`https://hidden-sierra-55763.herokuapp.com/projects/${id}`)
             .then(res => res.json())
             .then(data => setDetails(data))
     }, [])

@@ -11,9 +11,9 @@ const ProjectDetails = () => {
     return (
         <section>
             <div className="container">
-                <div className="grid grid-cols-2 md:grid-cols-2 gap-5 text-lg">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-lg">
                     <div className="">
-                        <div className="grid grid-cols-3">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                             <figure className="h-48 flex justify-center"><img className="h-auto w-auto" src={details.img1} alt="Shoes" /></figure>
                             <figure className="h-48 flex justify-center"><img className="h-full" src={details.img2} alt="Shoes" /></figure>
                             <figure className="h-48 flex justify-center"><img className="h-full" src={details.img3} alt="Shoes" /></figure>

@@ -1,5 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import user from '../images/icons/user.png';
+import email from '../images/icons/email.png';
+import phone from '../images/icons/telephone.png';
+import adress from '../images/icons/adress.png';
 const Contact = () => {
     const form = useRef();
     const sendEmail = e => {
@@ -15,36 +19,62 @@ const Contact = () => {
     return (
         <section id="contact">
             <div className="container">
-                <div className="hero bg-base-200 py-10">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                    </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <div className="card-body">
-                            <form ref={form} onSubmit={sendEmail}>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Your Name</span>
-                                    </label>
-                                    <input type="text" name="name" placeholder="Your Name" className="input input-bordered" />
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Email</span>
-                                    </label>
-                                    <input type="text" name="email" placeholder="email" className="input input-bordered" />
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Your Message</span>
-                                    </label>
-                                    <textarea className="input input-bordered h-28" name="message" placeholder="type massage"></textarea>
-                                </div>
-                                <div className="form-control mt-6">
-                                    <button className="btn btn-primary" type="submit">Send Massage</button>
-                                </div>
-                            </form>
+                <div>
+                    <h5 className="text-4xl font-medium text-center mb-20 title">Contact me</h5>
+                </div>
+                <div className="md:flex contact-main justify-between">
+                    <div className="mb-8">
+                        <h5 className="text-2xl font-semibold mb-5">Contact me to get your work done</h5>
+                        <div className="flex items-center mb-3">
+                            <img src={user} className="mr-7" alt="man" />
+                            <div>
+                                <h5 className="text-xl font-medium">Name</h5>
+                                <h5 className="name text-xl">Muhammad Abu Bakar</h5>
+                            </div>
                         </div>
+                        <div className="flex items-center mb-3">
+                            <img src={phone} className="mr-7" alt="man-" />
+                            <div>
+                                <h5 className="text-xl font-medium">Phone</h5>
+                                <h5 className="phone">+880 1857-927912</h5>
+                            </div>
+                        </div>
+                        <div className="flex items-center mb-3">
+                            <img src={email} className="mr-7" alt="man-" />
+                            <div>
+                                <h5 className="text-xl font-medium">Email</h5>
+                                <h5 className="email">abubakarsiddique7912 @gmail.com</h5>
+                            </div>
+                        </div>
+                        <div className="flex items-center">
+                            <img src={adress} className="mr-7" alt="man" />
+                            <div>
+                                <h5 className="text-xl font-medium">Adress</h5>
+                                <h5 className="adress">Fatickchari, Chattogram, Bangladesh</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="pb-10 w-full lg:max-w-[630px] contact">
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className="lg:flex gap-3 mb-3">
+                                <div className="form-control w-full mb-3 lg:mb-0">
+                                    <input type="text" name="name" placeholder="Name" />
+                                </div>
+                                <div className="form-control w-full">
+                                    <input type="text" name="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div className="form-control mb-3">
+                                <input type="text" name="name" placeholder="Subject" />
+                            </div>
+                            <div className="form-control">
+                                <textarea className="h-36 pt-2" name="message" placeholder="Type a massage..."></textarea>
+                            </div>
+                            <div className="mt-4">
+                                <button className="btn rounded-none bg-[#FFB400] border-0 text-black font-medium hover:bg-[#FFB400]" type="submit">Send Massage</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

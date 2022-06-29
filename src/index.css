@@ -2,9 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background: #F0F0F6;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+
+}
+
+.baaner-img {
+    border-radius: 100%;
+    padding: 0;
+    border: 14px solid #fff;
+    max-width: 394px;
+    max-height: 394px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(255, 255, 255, 0.15);
+}
+
+.contact input,
+textarea {
+    font-size: 17px;
+    padding: 11px 16px;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+}
+
+.title {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+#about {
+    min-height: calc(100vh - 64px);
+}
+
+#services .title::after {
+    content: 'what i provide';
+
+}
+
+#about .title::after {
+    content: 'who i am';
+}
+
+#contact .title::after {
+    content: 'get in tuch';
+}
+
+.title::after {
+    font-size: 20px;
+    position: absolute;
+    bottom: -27%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #F0F0F6;
+    padding: 0 5px;
+}
+
+.title::before {
+    content: '';
+    width: 150px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+}
+
+#services .title::before {
+    width: 180px;
+}
+
+#contact .name,
+.phone,
+.email,
+.adress {
+    font-size: 17px;
+}
+
+#about .icon img {
+    width: 35px;
+}
+
+@media screen and (min-width: 870px) {
+    .contact {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .contact-main {
+        flex-direction: column;
+        width: 100%;
+    }
 }

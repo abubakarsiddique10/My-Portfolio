@@ -1,21 +1,20 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import ProjectDetails from "./ProjectDetails";
+import { useNavigate } from "react-router-dom";
+
 const Project = ({ project }) => {
     const navigate = useNavigate()
-    const { name, image, description, _id } = project;
+    const { image, id, link } = project;
+
     const handlenavigate = id => {
         navigate(`/projectDetails/${id}`)
     }
     return (
-        <div className="card lg:w-lg bg-base-100 shadow-xl">
-            <figure className="h-48"><img className="h-full" src={image} alt="Shoes" /></figure>
-            <div className="card-body">
-                <h2 className="card-title">{name}</h2>
-                <p>{description}</p>
-                <div className="card-actions justify-end">
-                    <button onClick={() => handlenavigate(_id)} className="btn btn-primary">Details</button>
-                </div>
+        <div style={{ backgroundImage: `url(${image})` }} className="h-[450px] overflow-hidden relative shadow-xl card bg-cover bg-top hover:bg-bottom">
+            <div className="absolute h-full w-full bottom-0 left-0 project-card flex justify-center items-center gap-5">
+                <a href={link} target="_blank">
+                    <button className="rounded-none bg-[#F94073] w-32 h-10 font-medium text-lg text-black border-0 hover:bg-[#F94073] text-white">Live Demo</button>
+                </a>
+                <button onClick={() => handlenavigate(id)} className="rounded-none bg-[#F94073] w-32 h-10 font-medium text-lg text-black border-0 hover:bg-[#F94073] text-white">Details</button>
             </div>
         </div>
     )

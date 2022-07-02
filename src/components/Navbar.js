@@ -1,20 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import pdf from '../resume/Abu Bakar Resume.pdf'
+import { Link, NavLink } from "react-router-dom";
+
 const Navbar = () => {
     const manuItems =
         <>
-            <li><Link to='/about'>About</Link></li>
-            <li><Link to='/blogs'>Blog</Link></li>
-            <li><Link to="/">Contact</Link></li>
-            <li><a href={pdf} download>Resume</a></li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to='/about'>About</NavLink></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><NavLink to='/blogs'>Blog</NavLink></li>
+            <li><a href="/#contact">Contact</a></li>
+
         </>
     return (
-        <header className="w-full bg-white sticky top-0 z-10">
+        <header className="w-full bg-[#2D3054] text-[#fff] sticky top-0 z-10">
             <div className="container">
-                <div className="navbar bg-base-100 px-0 justify-between">
+                <div className="navbar px-0 justify-between">
                     <div className="navbar-start">
-                        <Link to="/" className="text-2xl font-semibold">Abu Bakar</Link>
+                        <Link to="/" className="text-2xl font-medium">Abu Bakar</Link>
                     </div>
                     <div className="navbar-center hidden md:block lg:flex">
                         <ul className="menu menu-horizontal p-0 text-lg font-medium">

@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "name": "Manufacturer website development,",
         "image": "https://i.ibb.co/Lvw0j7J/1.jpg",
         "img1": "https://i.ibb.co/JBLzSf7/5.jpg",
@@ -14,6 +15,7 @@
         "technology": "Tailwind, DaisyUI component, React js, React router, Express.js firebase etc."
     },
     {
+        "id": 1,
         "name": "Warehouse management website",
         "image": "https://i.ibb.co/mzjPpdZ/3-2.jpg",
         "img1": "https://i.ibb.co/ckQW39N/8.jpg",
@@ -25,9 +27,12 @@
         "link": "https://phone-corner-e38c5.web.app/",
         "client": "https://github.com/abubakarsiddique10/warehouse-management-client-side",
         "server": "https://github.com/abubakarsiddique10/Warehouse-management-server-side",
-        "technology": "React-bootstrap, React.js React-router, Express.js, Mongodb etc."
+        "technology": "React-bootstrap, React.js React-router, Express.js, Mongodb etc.",
+        "btn1": "Live Demo",
+        "btn2": "Details"
     },
     {
+        "id": 2,
         "name": "Private service website",
         "image": "https://i.ibb.co/mvqv9zn/3-2.jpg",
         "img1": "https://i.ibb.co/mvqv9zn/3-2.jpg",

@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useData from "../hooks/useData";
 import Project from "./Project";
+
 const Projects = () => {
-    const [projects, setProjects] = useState([]);
-    useEffect(() => {
-        fetch('https://hidden-sierra-55763.herokuapp.com/projects')
-            .then(res => res.json())
-            .then(data => setProjects(data))
-    }, [])
+    const [projects] = useData();
+
     return (
-        <section className="my-20">
+        <section id="portfolio" className="">
             <div className="container">
-                <h1 className="text-center text-4xl my-12">Recent Projects</h1>
+                <h5 className="text-4xl font-medium text-center mb-20 title">My portfolio</h5>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {
-                        projects.map(project => <Project project={project} key={project._id} />)
+                        projects.map(project => <Project project={project} key={project.id} />)
                     }
                 </div>
             </div>
@@ -21,3 +19,5 @@ const Projects = () => {
     )
 }
 export default Projects;
+
+/* https://hidden-sierra-55763.herokuapp.com/projectsá */

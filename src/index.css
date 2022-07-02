@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@400;500;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #F0F0F6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+section:not(#banner) {
+    padding-top: 100px;
 }
 
 .container {
@@ -11,7 +23,29 @@ body {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
 
+ul li a,
+.navbar-start,
+.banner-title,
+.title,
+.skill h5 {
+    font-family: 'Bubblegum Sans', sans-serif;
+    font-size: 20px;
+}
+
+ul li a.active {
+    background: none;
+    border-radius: 0 !important;
+    color: #F94073;
+}
+
+ul li a:hover {
+    color: #F94073;
+}
+
+ul li a:focus {
+    background: none;
 }
 
 .baaner-img {
@@ -21,6 +55,36 @@ body {
     max-width: 394px;
     max-height: 394px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(255, 255, 255, 0.15);
+}
+
+.skill-img {
+    border: 10px solid #d7d3d385;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.skill-img:hover {
+    border-color: #d7d3d3eb;
+}
+
+.skill-img img {
+    max-width: 42px;
+    height: auto;
+    transition: .2s;
+    object-fit: cover;
+}
+
+.skill:hover img {
+    transform: scale(1.1);
+}
+
+#my-skills {
+    background-color: #F0F0F6;
 }
 
 .contact input,
@@ -39,13 +103,8 @@ textarea {
     padding-bottom: 20px;
 }
 
-#about {
-    min-height: calc(100vh - 64px);
-}
-
 #services .title::after {
     content: 'what i provide';
-
 }
 
 #about .title::after {
@@ -56,10 +115,18 @@ textarea {
     content: 'get in tuch';
 }
 
+#portfolio .title::after {
+    content: 'visit my work';
+}
+
+#my-skills .title::after {
+    content: 'what i know';
+}
+
 .title::after {
     font-size: 20px;
     position: absolute;
-    bottom: -27%;
+    bottom: -40%;
     left: 50%;
     transform: translateX(-50%);
     background: #F0F0F6;
@@ -74,11 +141,11 @@ textarea {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 0;
+    bottom: -13%;
 }
 
 #services .title::before {
-    width: 180px;
+    width: 165px;
 }
 
 #contact .name,
@@ -90,6 +157,30 @@ textarea {
 
 #about .icon img {
     width: 35px;
+}
+
+.card {
+    transition: 3s;
+}
+
+.project-card {
+    transition: .3s;
+}
+
+.project-img:hover {
+    top: -100px;
+}
+
+.project-card:hover {
+    background: #050505ab;
+}
+
+.project-card:hover button {
+    visibility: visible;
+}
+
+.project-card button {
+    visibility: hidden;
 }
 
 @media screen and (min-width: 870px) {

@@ -9,12 +9,12 @@ const Project = ({ project }) => {
         navigate(`/projectDetails/${id}`)
     }
     return (
-        <div style={{ backgroundImage: `url(${image})` }} className="h-[450px] overflow-hidden relative shadow-xl card bg-cover bg-top hover:bg-bottom">
+        <div style={{ backgroundImage: `url(${image})` }} className="h-[450px] overflow-hidden relative shadow-xl card bg-cover bg-top hover:bg-bottom rounded-none">
             <div className="absolute h-full w-full bottom-0 left-0 project-card flex justify-center items-center gap-5">
                 <a href={link} target="_blank">
-                    <button className="rounded-none bg-[#F94073] w-32 h-10 font-medium text-lg text-black border-0 hover:bg-[#F94073] text-white">Live Demo</button>
+                    <button className="rounded-none bg-[#F94073] w-32 h-10 font-medium text-lg border-0 hover:bg-[#F94073] text-white">Live Demo</button>
                 </a>
-                <button onClick={() => handlenavigate(id)} className="rounded-none bg-[#F94073] w-32 h-10 font-medium text-lg text-black border-0 hover:bg-[#F94073] text-white">Details</button>
+                <button onClick={() => handlenavigate(id)} className="rounded-none bg-[#F94073] w-32 h-10 font-medium text-lg border-0 hover:bg-[#F94073] text-white">Details</button>
             </div>
         </div>
     )

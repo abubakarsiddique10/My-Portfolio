@@ -10,7 +10,7 @@ const Banner = () => {
                     <div className="text-center sm:text-left ">
                         <h5 className="font-medium mb-1 text-xl">Hi, my neme is</h5>
                         <h1 className="text-3xl sm:text-5xl font-bold banner-title">Abu Bakar and I'm a Front-end Developer </h1>
-                        <p className="py-6 text-lg max-w-[700px]">Hi! My name is Muhammad Abu Bakar.I am Frontend Developer, and I'm very passionate and dedicated to my work.With 2 years experience as a professional Frontend Developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
+                        <p className="py-6 text-lg max-w-[700px]">Hi! My name is Muhammad Abu Bakar. I'm a Frontend Developer, and I'm very passionate and dedicated to my work. With 2 years experience as a professional Frontend Developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
                         <a href={pdf} download>
                             <Button>download cv</Button>
                         </a>

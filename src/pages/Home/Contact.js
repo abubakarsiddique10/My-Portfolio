@@ -62,10 +62,10 @@ const Contact = () => {
                             <form ref={form} onSubmit={sendEmail}>
                                 <div className="lg:flex gap-3 mb-3">
                                     <div className="form-control w-full mb-3 lg:mb-0">
-                                        <input type="text" name="name" placeholder="Name" />
+                                        <input type="text" name="name" placeholder="Your Name" />
                                     </div>
                                     <div className="form-control w-full">
-                                        <input type="text" name="email" placeholder="Email" />
+                                        <input type="text" name="email" placeholder="Your Email" />
                                     </div>
                                 </div>
                                 <div className="form-control mb-3">

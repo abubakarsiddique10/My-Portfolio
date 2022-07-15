@@ -31,13 +31,17 @@ const MySkills = () => {
         {
             "title": "NodeJs",
             "img": "https://i.ibb.co/qYjCSfc/nodejs.png"
+        },
+        {
+            "title": "Mongodb",
+            "img": "https://i.ibb.co/sHQRMX4/60232c7fee9f278674db9c2c-9kib-354x415-unnamed-mongodb-logo-sv-11562860723mgempnmrq3.png"
         }
     ]
     return (
         <section id="my-skills" className="">
             <div className="container">
                 <h1 className="text-4xl text-center font-medium title">My Skills</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-y-5 lg:grid-cols-7 text-center">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-y-5 lg:grid-cols-8 text-center">
                     {
                         skills.map((skill, index) => <MySkill key={index} skill={skill} />)
                     }

@@ -15,7 +15,7 @@ const Services = () => {
         },
         {
             "icon": "https://i.ibb.co/W6VY9cX/file.png",
-            "title": "Any conversion",
+            "title": "Any conversion from Figma",
             "description": "Are you in need of a front-end developer who will be able to convert your web mockups to a clean, pixel-perfect, and fully responsive website? If your answer is YES then congrats! you are at the right place :)"
         }
     ]

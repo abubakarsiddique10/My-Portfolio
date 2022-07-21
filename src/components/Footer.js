@@ -1,5 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 const Footer = () => {
+    const [open, setOpen] = useState(false);
+    const handleCopy = () => {
+        navigator.clipboard.writeText('abubakarsiddique7912@gmail.com');
+        setOpen(!open);
+    }
+    setTimeout(() => {
+        setOpen(false)
+    }, 5000)
     return (
         <footer className="pt-24 bg-[#2D3054] text-[#fff] mt-[100px]">
             <div className="container">
@@ -20,21 +28,32 @@ const Footer = () => {
                         <a href="#services" className="link link-hover">Email Signature</a>
                         <a href="#services" className="link link-hover">Any Conversion</a>
                     </div>
-                    {/* <div className="flex flex-col">
-                        <span className="footer-title">Useful Link</span>
-                        <a className="link link-hover">Terms of use</a>
-                        <a className="link link-hover">Privacy policy</a>
-                        <a className="link link-hover">Cookie policy</a>
-                    </div> */}
+
                     <div className="flex flex-col">
                         <span className="text-xl mb-2 font-medium">Adress</span>
                         <a >Fatickchari, Chattogram, Bangladesh</a>
                         <a>Phone: 01857927912</a>
                         <a>Email: abubakarsiddique7912@gmail.com</a>
-                        <div className="flex gap-5 mt-3">
-                            <a href="https://www.facebook.com/md.bakkar.129357" className="link" target="_blank"><img src="https://i.ibb.co/4T6mjnQ/facebook-1.png" className="w-8" /></a>
-                            <a href="https://www.linkedin.com/in/muhammad-abu-bakar-a283b4241/" className="link" target="_blank"><img src=" https://i.ibb.co/fFcBCcp/linkedin-2.png" className="w-8" /></a>
-                            <a href="mailto:abubakarsiddique7912@gmail.com" className="link" target="_blank"><img src=" https://i.ibb.co/92SBqgL/gmail.png" className="w-8 bg-white" title="abubakarsiddique7912@gmail.com" /></a>
+                        <div className="icon flex gap-4 mt-5">
+                            <div className="w-8 h-8 bg-white flex items-center justify-center">
+                                <a className="link" target="_blank" href="https://www.facebook.com/md.bakkar.129357">
+                                    <img src="https://i.ibb.co/z6Nx7bT/facebook-app-symbol.png" />
+                                </a>
+                            </div>
+                            <div className="w-8 h-8 bg-white flex items-center justify-center">
+                                <a className="link" target="_blank" href="https://www.linkedin.com/in/muhammad-abu-bakar-a283b4241/">
+                                    <img src="https://i.ibb.co/5BvspPK/linkedin-2.png" />
+                                </a>
+                            </div>
+                            <div onClick={handleCopy} className="w-8 h-8 bg-white flex items-center justify-center cursor-pointer relative">
+                                <img src="https://i.ibb.co/w6K833X/email-3.png" />
+                                {open && <p className="absolute top-[95%] text-[13px] font-medium">Copied</p>}
+                            </div>
+                            <div className="w-8 h-8 bg-white flex items-center justify-center">
+                                <a className="link" target="_blank" href="https://github.com/abubakarsiddique10">
+                                    <img src=" https://i.ibb.co/QHpNdt5/github.png" />
+                                </a>
+                            </div>
                         </div>
 
                     </div>

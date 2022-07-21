@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../components/Button";
-import pdf from '../../resume/Abu Bakar Resume.pdf'
+import pdf from '../../resume/Resume of Abu Bakar.pdf'
 const Banner = () => {
     return (
         <section id="banner" className="bg-white">

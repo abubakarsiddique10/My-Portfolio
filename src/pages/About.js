@@ -17,8 +17,8 @@ const About = () => {
                 <div className="flex justify-center items-center justify-between flex-col lg:flex-row gap-10">
                     <img src="https://i.ibb.co/TkydWxF/abu-bakaar-1.png" className="w-[400px] bg-[#79AFD1] rounded" />
                     <div>
-                        <h5 className="text-3xl font-medium">Front End Web Developer</h5>
-                        <p className="max-w-[700px] text-xl mt-3">Hi! My name is Abu Bakar I'm from Bangladesh. I'm a Frontend Web Developer. I'm very passionate & dedicated to my work. With 2 years experience in this job. In the following years, I also plan to explore the “server-side” more and become a better-rounded full-stack developer.</p>
+                        <h5 className="text-3xl font-medium">Front End Developer</h5>
+                        <p className="max-w-[700px] text-xl mt-3">Hi! My name is Abu Bakar I'm from Bangladesh. I'm a Frontend Developer. I'm very passionate & dedicated to my work. With 2 years experience in this job. In the following years, I also plan to explore the “server-side” more and become a better-rounded full-stack developer.</p>
                         <div className="icon flex gap-5 mt-5">
                             <div className="w-10 h-10 bg-white flex items-center justify-center">
                                 <a className="link" target="_blank" href="https://www.facebook.com/md.bakkar.129357">

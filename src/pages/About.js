@@ -18,7 +18,7 @@ const About = () => {
                     <img src="https://i.ibb.co/TkydWxF/abu-bakaar-1.png" className="w-[400px] bg-[#79AFD1] rounded" />
                     <div>
                         <h5 className="text-3xl font-medium">Front End Developer</h5>
-                        <p className="max-w-[700px] text-xl mt-3">Hi! My name is Abu Bakar I'm from Bangladesh. I'm a Frontend Developer. I'm very passionate & dedicated to my work. With 2 years experience in this job. In the following years, I also plan to explore the “server-side” more and become a better-rounded full-stack developer.</p>
+                        <p className="max-w-[700px] text-xl mt-3">Hi! My name is Abu Bakar I'm from Bangladesh. I'm a front-end developer. I love to work with React JS. over the last year, I gather knowledge in various parts of web development by myself. I always try to improve my skills and knowledge base to fit with the latest technologies. My goal is to become a full-stack web developer who can make beautiful UI and also can handle the back-end smoothly.</p>
                         <div className="icon flex gap-5 mt-5">
                             <div className="w-10 h-10 bg-white flex items-center justify-center">
                                 <a className="link" target="_blank" href="https://www.facebook.com/md.bakkar.129357">

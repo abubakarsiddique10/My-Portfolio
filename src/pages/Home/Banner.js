@@ -11,7 +11,7 @@ const Banner = () => {
                         <h5 className="font-medium mb-1 text-[20px]">Hi, my neme is</h5>
                         <h1 className="text-3xl sm:text-5xl font-bold banner-title">Abu Bakar and I'm a Front-end Developer </h1>
                         <p className="py-6 text-lg max-w-[700px]">
-                            I'm a Frontend Developer, and I specialize in efficient React, HTML, CSS & javaScript that just work across all platforms and browsers. for the past two years, I gather knowledge in various parts of web development. My goal is to become a full-stack web developer who can make beautiful UI and also can handle the back-end smoothly.
+                            I'm a Frontend Developer, and I specialize in efficient React, HTML, CSS & JavaScript that just work across all platforms and browsers. for the past two years, I gather knowledge in various parts of web development. My goal is to become a full-stack web developer who can make beautiful UI and also can handle the back-end smoothly.
                         </p>
                         <a href={pdf} download>
                             <Button>download cv</Button>

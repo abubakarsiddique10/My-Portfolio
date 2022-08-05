@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 import pdf from '../../resume/Resume of Abu Bakar.pdf'
 const Banner = () => {
     return (
-        <section id="banner" className="bg-white">
+        <section id="banner" className="bg-white text-black">
             <div className="container bg-[url(https://i.ibb.co/mvYYy9d/Main-menu-1.png)]" style={{ backgroundPosition: "68% 55%", backgroundRepeat: "no-repeat" }}>
                 <div className="hero-content flex-col lg:flex-row-reverse lg:h-[650px] py-10 lg:p-0 gap-8 lg:gap-32">
                     <img src="https://i.ibb.co/pxNnzN3/abu-bakaar-1.png" className="max-w-sm baaner-img w-full bg-[#FBFBFB]" />

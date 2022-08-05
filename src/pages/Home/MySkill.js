@@ -6,7 +6,7 @@ const MySkill = ({ skill }) => {
             <div className="skill-img">
                 <img src={img} />
             </div>
-            <h5 className="mt-3 text-xl font-medium">{title}</h5>
+            <h5 className="mt-3 text-xl font-medium text-black">{title}</h5>
         </div>
     )
 }

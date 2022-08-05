@@ -102,26 +102,32 @@ textarea {
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
+    color: black;
 }
 
 #services .title::after {
     content: 'what i provide';
+    color: black;
 }
 
 #about .title::after {
     content: 'who i am';
+    color: black;
 }
 
 #contact .title::after {
     content: 'get in tuch';
+    color: black;
 }
 
 #portfolio .title::after {
     content: 'visit my work';
+    color: black;
 }
 
 #my-skills .title::after {
     content: 'what i know';
+    color: black;
 }
 
 .title::after {
